@@ -1,0 +1,141 @@
+/*
+  CONTACT.CSS
+  A more bespoke, visually rich contact page for Soft Touch Carpets & Elegant Edges
+*/
+
+/* Root Colours */
+:root {
+    --brown: #3B2F2F;
+    --brownish: #8B7D7B;
+    --tan: #C2A878;
+    --cream: #FFFDF9;
+    --light-cream: #FFF8E1;
+  }
+  
+  /* Base Typography */
+  body {
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--cream);
+    color: #4a4a4a;
+  }
+  
+  /* Utility Classes */
+  .bg-brown {
+    background-color: var(--brown) !important;
+  }
+  .btn-tan {
+    background-color: var(--tan) !important;
+    border: none !important;
+    color: #fff !important;
+    transition: background-color 0.3s ease;
+  }
+  .btn-tan:hover {
+    background-color: var(--brownish) !important;
+  }
+  .btn-brown {
+    background-color: var(--brown) !important;
+    border: none !important;
+    color: #fff !important;
+    transition: background-color 0.3s ease;
+  }
+  .btn-brown:hover {
+    background-color: var(--brownish) !important;
+  }
+  .bg-cream {
+    background-color: var(--cream) !important;
+  }
+  
+  /* Navbar */
+  .navbar-dark.bg-brown {
+    background-color: var(--brown) !important;
+  }
+  .navbar-nav .nav-link.active {
+    color: var(--tan) !important;
+  }
+  
+  /* Hero Section */
+  .contact-hero {
+    background: url("https://via.placeholder.com/1920x800.png?text=Contact+Hero") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* Parallax on desktop */
+    min-height: 60vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(59, 47, 47, 0.5);
+    z-index: 1;
+  }
+  .contact-hero .container {
+    z-index: 2;
+  }
+  .hero-title {
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+  }
+  
+  /* Section Headings */
+  .section-heading {
+    font-family: 'Playfair Display', serif;
+    color: var(--brown);
+    font-weight: 700;
+  }
+  
+  /* Map Wrapper */
+  .map-wrapper {
+    height: 350px;
+    overflow: hidden;
+  }
+  
+  /* Parallax CTA Section */
+  .parallax-cta {
+    background: url("https://via.placeholder.com/1920x600.png?text=CTA+Background") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cta-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(59, 47, 47, 0.5);
+    z-index: 1;
+  }
+  .parallax-cta .container {
+    z-index: 2;
+  }
+  
+  /* Form Stylistics */
+  #contactForm .form-label {
+    color: var(--brown);
+    font-weight: 600;
+  }
+  
+  /* Footer */
+  footer p {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--brown);
+  }
+  
+  /* Responsive Tweaks */
+  @media (max-width: 992px) {
+    .contact-hero, .parallax-cta {
+      background-attachment: scroll; /* disable parallax on smaller screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .hero-title {
+      font-size: 1.75rem;
+    }
+  }
+  

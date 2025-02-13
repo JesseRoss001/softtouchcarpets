@@ -3,73 +3,263 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
+
+  <!-- Bootstrap CSS -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous"
+  >
+
+  <!-- Page-Specific Styles -->
+  <link rel="stylesheet" href="contact.css" />
+
   <!-- SEO Meta Tags -->
-  <title>Contact Soft Touch Carpets | Free Carpet & Stair Runner Quotes</title>
-  <meta name="description" content="Get in touch for expert carpet fitting, stair runner installation, and vinyl flooring in Hertfordshire. Call, email, or request a free online estimate." />
-  <meta name="keywords" content="carpet fitters near me, free carpet estimate, contact local carpet fitters, Hertfordshire flooring services, stair runner" />
-  
-  <!-- Fonts & Styles -->
+  <title>Contact Soft Touch Carpets &amp; Elegant Edges | Hertfordshire Flooring Experts</title>
+  <meta 
+    name="description" 
+    content="Get in touch with Soft Touch Carpets & Elegant Edges for free measures, quotes, or more information on carpet fitting, stair runners, vinyl, and custom mats."
+  />
+  <meta 
+    name="keywords" 
+    content="contact, carpeting, stair runners, vinyl flooring, mat services, Hertfordshire"
+  />
+
+  <!-- Google Fonts (Playfair Display, Montserrat, Nunito) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;500;700;900&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Montserrat:wght@400;700&family=Nunito:wght@300;400;700&display=swap" 
+    rel="stylesheet"
+  >
+
+  <!-- Web3Forms 
+       See https://web3forms.com/ for details.
+       Replace 'YOUR_ACCESS_KEY' with your actual key.
+  -->
+
+  <!-- Client-side spam check for "seo"/"top google"; honeypot usage. -->
+  <script defer>
+    document.addEventListener('DOMContentLoaded', () => {
+      const messageInput = document.getElementById('message');
+      messageInput.addEventListener('input', (e) => {
+        const val = e.target.value.toLowerCase();
+        if (val.includes('seo') || val.includes('top google')) {
+          e.target.setCustomValidity('Your message contains prohibited spam terms. Please remove references to SEO or top google.');
+        } else {
+          e.target.setCustomValidity('');
+        }
+      });
+    });
+  </script>
 </head>
 <body>
-  <!-- HEADER / NAVIGATION -->
-  <header class="main-header">
-    <div class="logo">
-      <h1>Soft Touch Carpets &amp; Elegant Edges</h1>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-brown sticky-top shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">
+        Soft Touch Carpets &amp; Elegant Edges
+      </a>
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarContent" 
+        aria-controls="navbarContent" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
-    </nav>
+  </nav>
+
+  <!-- HERO / BANNER SECTION -->
+  <header class="contact-hero d-flex align-items-center">
+    <div class="hero-overlay"></div>
+    <div class="container text-center text-white">
+      <h1 class="display-4 hero-title mb-3">Let's Connect</h1>
+      <p class="lead mb-4">
+        Ready to transform your floors? We'd love to hear from you.
+      </p>
+      <a href="#contactSection" class="btn btn-tan btn-lg">Contact Us</a>
+    </div>
   </header>
 
-  <!-- CONTACT SECTION -->
-  <section class="contact-section">
+  <!-- CONTACT DETAILS & MAP SECTION -->
+  <section class="py-5 bg-cream" id="contactSection">
     <div class="container">
-      <h2>Get Your Free Estimate</h2>
-      <p>
-        Ready to transform your home with top-quality carpets, stair runners,
-        or vinyl flooring? Contact us today for a free measure and quote!
-      </p>
-
-      <div class="contact-info">
-        <h3>Contact Details</h3>
-        <p><strong>Address:</strong> 2 Warren Close, Hatfield, Herts AL10 0AL</p>
-        <p><strong>Phone (Stephen):</strong> 07768106205</p>
-        <p><strong>Phone (Maxine):</strong> 07921455215</p>
-        <p><strong>Email:</strong> <a href="mailto:info@softtouchcarpets.com">info@softtouchcarpets.com</a> <em>(or use a temporary email if needed)</em></p>
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6">
+          <h2 class="section-heading mb-4" style="font-family: 'Playfair Display', serif;">
+            Get In Touch
+          </h2>
+          <p class="fs-5 mb-4">
+            Whether you have a question about our carpet fitting, stair runner services, 
+            vinyl flooring, or want a free quote, our team is here to help.
+          </p>
+          <ul class="list-unstyled fs-5">
+            <li class="mb-3">
+              <span class="fw-semibold">Address:</span><br/>
+              2 Warren Close,<br/>
+              Hatfield, Herts, AL10 0AL
+            </li>
+            <li class="mb-3">
+              <span class="fw-semibold">Call Us:</span><br/>
+              Stephen: 07768106205<br/>
+              Maxine: 07921455215
+            </li>
+            <li class="mb-3">
+              <span class="fw-semibold">Email:</span><br/>
+              info@softtouchcarpets.com
+            </li>
+          </ul>
+          <p class="small text-muted">
+            We serve Hertfordshire and a 20–40 mile radius. For larger projects, 
+            we can travel further—just ask.
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <!-- Embed a real map or directions if desired -->
+          <div class="map-wrapper position-relative rounded shadow overflow-hidden">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.3578177238225!2d-0.22388158431624517!3d51.76262610279852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48763a9b374501af%3A0xfd10df5522725673!2sHatfield%2C%20UK!5e0!3m2!1sen!2suk!4v1689000000000!5m2!1sen!2suk" 
+              width="100%" 
+              height="350" 
+              style="border:0;" 
+              allowfullscreen 
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
       </div>
+    </div>
+  </section>
 
-      <form class="contact-form" action="#" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
+  <!-- MAIN CONTACT FORM SECTION -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-8 mx-auto">
+          <div class="p-4 bg-white rounded shadow-sm">
+            <h3 class="mb-4 text-brown">Send Us a Message</h3>
+            <p class="mb-4">
+              Fill out the form below and we’ll be in touch soon. We typically respond 
+              within 24 hours on weekdays.
+            </p>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
+            <form 
+              action="https://api.web3forms.com/submit" 
+              method="POST" 
+              id="contactForm"
+              class="position-relative"
+              novalidate
+            >
+              <!-- Web3Forms: replace YOUR_ACCESS_KEY with your real key -->
+              <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY" />
 
-        <label for="phone">Phone Number (optional):</label>
-        <input type="tel" id="phone" name="phone" />
+              <!-- Honeypot Field -->
+              <div style="display:none;">
+                <label>Keep This Field Empty</label>
+                <input type="text" name="honeypot" tabindex="-1" autocomplete="off" />
+              </div>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="6" required></textarea>
+              <div class="mb-3">
+                <label for="name" class="form-label fw-semibold">Name</label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  name="name"
+                  class="form-control" 
+                  required
+                >
+              </div>
 
-        <button type="submit" class="btn-cta">Submit</button>
-      </form>
+              <div class="mb-3">
+                <label for="email" class="form-label fw-semibold">Email</label>
+                <input 
+                  type="email" 
+                  id="email"
+                  name="email"
+                  class="form-control" 
+                  required
+                >
+              </div>
+
+              <div class="mb-3">
+                <label for="phone" class="form-label fw-semibold">Phone</label>
+                <input 
+                  type="tel" 
+                  id="phone"
+                  name="phone" 
+                  class="form-control"
+                  placeholder="Optional"
+                >
+              </div>
+
+              <div class="mb-4">
+                <label for="message" class="form-label fw-semibold">Message</label>
+                <textarea 
+                  id="message"
+                  name="message"
+                  class="form-control" 
+                  rows="5" 
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-brown w-100 py-2">
+                Submit
+              </button>
+
+              <!-- Status message from Web3Forms -->
+              <div class="form-status mt-3"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECONDARY CTA (OPTIONAL) -->
+  <section class="py-5 parallax-cta text-center text-white position-relative">
+    <div class="cta-overlay"></div>
+    <div class="container z-index-2">
+      <h2 class="display-6 fw-bold mb-3">
+        Need Urgent Assistance?
+      </h2>
+      <p class="lead mb-4">
+        Give us a call and speak directly to our friendly team. We’re always happy to chat about 
+        your flooring questions, quotes, or special requests.
+      </p>
+      <a href="tel:+447768106205" class="btn btn-tan btn-lg">Call Us Now</a>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer>
-    <p>&copy; 2025 Soft Touch Carpets &amp; Elegant Edges. All rights reserved.</p>
-    <p>Family-run, NVQ-certified, and proudly serving Hertfordshire and surrounding areas.</p>
+  <footer class="border-top py-4 bg-light">
+    <div class="container text-center">
+      <p class="mb-1">&copy; 2025 Soft Touch Carpets &amp; Elegant Edges</p>
+      <p class="mb-0">Family-Run, NVQ-Qualified, Serving Hertfordshire &amp; Beyond</p>
+    </div>
   </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+    crossorigin="anonymous"
+  ></script>
 </body>
 </html>
