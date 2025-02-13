@@ -1,0 +1,86 @@
+/*
+  STYLES.CSS
+  Global site-wide styles for Soft Touch Carpets & Elegant Edges:
+  - Colour variables
+  - Typography
+  - Navbar, footer
+  - General utility classes
+*/
+
+/* Colour Variables */
+:root {
+    --brown: #3B2F2F;
+    --brownish: #8B7D7B;
+    --tan: #C2A878;
+    --cream: #FFFDF9;
+    --light-cream: #FFF8E1;
+  }
+  
+  /* Base Styling */
+  body {
+    font-family: 'Nunito', sans-serif;
+    color: #4a4a4a;
+    background-color: var(--cream);
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Bootstrap Overrides / Utility Classes */
+  .bg-brown {
+    background-color: var(--brown) !important;
+  }
+  .text-brown {
+    color: var(--brown) !important;
+  }
+  .bg-cream {
+    background-color: var(--cream) !important;
+  }
+  .btn-tan {
+    background-color: var(--tan) !important;
+    border: none !important;
+    color: #ffffff !important;
+  }
+  .btn-tan:hover {
+    background-color: var(--brownish) !important;
+  }
+  .btn-brown {
+    background-color: var(--brown) !important;
+    border: none !important;
+    color: #ffffff !important;
+  }
+  .btn-brown:hover {
+    background-color: var(--brownish) !important;
+  }
+  
+  /* Navbar (Shared) */
+  .navbar-dark.bg-brown {
+    background-color: var(--brown) !important;
+  }
+  .navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+  }
+  .navbar-dark .navbar-nav .nav-link.active {
+    color: var(--tan) !important;
+  }
+  
+  /* Section Headings (Global) */
+  .section-heading {
+    font-family: 'Playfair Display', serif;
+    color: var(--brown);
+    font-weight: 700;
+  }
+  
+  /* Footer */
+  footer p {
+    margin: 0;
+    color: var(--brown);
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  /* Responsive Adjustments (Global) */
+  @media (max-width: 768px) {
+    .section-heading {
+      font-size: 1.75rem;
+    }
+  }
+  
