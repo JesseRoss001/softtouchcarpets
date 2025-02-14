@@ -19,12 +19,22 @@
   --light-cream: #FFF8E1;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: 'Nunito', sans-serif;
   color: #4a4a4a;
   background-color: var(--cream);
-  margin: 0;
-  padding: 0;
+}
+
+/* Remove default image gaps/spaces on mobile and everywhere */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* -----------------------------------------
@@ -33,22 +43,29 @@ body {
 .navbar-dark.bg-brown {
   background-color: var(--tan) !important;
 }
+
 .navbar.navbar-expand-lg.sticky-top {
   position: sticky;
   top: 0;
   z-index: 999; /* ensures nav is above other elements when scrolling */
 }
+
+/* Allow brand name to break into two lines comfortably */
 .navbar-brand {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.5px;
+  white-space: pre-wrap; /* permits line breaks within brand text */
+ 
 }
 
 .navbar-nav .nav-link {
   transition: color 0.2s ease;
 }
+
 .navbar-nav .nav-link:hover {
   color: var(--brownish) !important;
 }
+
 .navbar-dark .navbar-nav .nav-link.active {
   color: var(--tan) !important;
   font-weight: 700;
@@ -57,7 +74,6 @@ body {
 /* -----------------------------------------
    3. Buttons & Links
 ------------------------------------------ */
-/* Universal button look (Bootstrap overrides) */
 .btn-tan {
   background-color: var(--tan) !important;
   border: none !important;
@@ -84,6 +100,7 @@ a {
   text-decoration: none;
   transition: color 0.2s ease;
 }
+
 a:hover {
   color: var(--brownish);
   text-decoration: none; /* keep it consistent */
@@ -107,29 +124,22 @@ footer {
   border-top: 2px solid var(--tan);
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  color:white !important;
+  color: white !important;
+  text-align: center;
 }
+
 footer .footer-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
 }
+
 footer p {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  
   font-size: 0.95rem;
 }
-
-/* Example: If you want columns in the footer, you could do:
-.footer-content {
-  flex-direction: row;
-  justify-content: space-between;
-} 
-.footer-content div { width: 25%; }
-But we keep it center-based for now.
-*/
 
 /* -----------------------------------------
    6. Responsive Adjustments (Global)

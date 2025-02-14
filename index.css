@@ -24,7 +24,7 @@ body {
   background-color: var(--cream);
 }
 
-/* Utility Classes (Redundant if already in styles.css, included here for clarity) */
+/* Utility Classes */
 .bg-brown {
   background-color: var(--brown) !important;
 }
@@ -52,10 +52,6 @@ body {
 .btn-brown:hover {
   background-color: var(--brownish) !important;
 }
-
-/* Navbar
-   Overwrites are in styles.css
-*/
 
 /* ---------------------------------------------------
    2. HERO SECTION
