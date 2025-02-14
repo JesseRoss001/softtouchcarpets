@@ -2,85 +2,144 @@
   STYLES.CSS
   Global site-wide styles for Soft Touch Carpets & Elegant Edges:
   - Colour variables
-  - Typography
-  - Navbar, footer
-  - General utility classes
+  - Base typography
+  - Navbar (sticky)
+  - Footer
+  - General buttons & link styling
 */
 
-/* Colour Variables */
+/* -----------------------------------------
+   1. Colour Variables & Base Typography
+------------------------------------------ */
 :root {
-    --brown: #3B2F2F;
-    --brownish: #8B7D7B;
-    --tan: #C2A878;
-    --cream: #FFFDF9;
-    --light-cream: #FFF8E1;
-  }
+  --brown: #3B2F2F;
+  --brownish: #8B7D7B;
+  --tan: #C2A878;
+  --cream: #FFFDF9;
+  --light-cream: #FFF8E1;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #4a4a4a;
+  background-color: var(--cream);
+  margin: 0;
+  padding: 0;
+}
+
+/* -----------------------------------------
+   2. Navbar
+------------------------------------------ */
+.navbar-dark.bg-brown {
+  background-color: var(--tan) !important;
+}
+.navbar.navbar-expand-lg.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 999; /* ensures nav is above other elements when scrolling */
+}
+.navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.navbar-nav .nav-link {
+  transition: color 0.2s ease;
+}
+.navbar-nav .nav-link:hover {
+  color: var(--brownish) !important;
+}
+.navbar-dark .navbar-nav .nav-link.active {
+  color: var(--tan) !important;
+  font-weight: 700;
+}
+
+/* -----------------------------------------
+   3. Buttons & Links
+------------------------------------------ */
+/* Universal button look (Bootstrap overrides) */
+.btn-tan {
+  background-color: var(--tan) !important;
+  border: none !important;
+  color: #ffffff !important;
+  transition: background-color 0.3s ease;
+}
+.btn-tan:hover {
+  background-color: var(--brownish) !important;
+}
+
+.btn-brown {
+  background-color: var(--brown) !important;
+  border: none !important;
+  color: #ffffff !important;
+  transition: background-color 0.3s ease;
+}
+.btn-brown:hover {
+  background-color: var(--brownish) !important;
+}
+
+/* Link styling (outside of nav) */
+a {
+  color: var(--brown);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: var(--brownish);
+  text-decoration: none; /* keep it consistent */
+}
+
+/* -----------------------------------------
+   4. Section Headings
+------------------------------------------ */
+.section-heading {
+  font-family: 'Playfair Display', serif;
+  color: var(--brown);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* -----------------------------------------
+   5. Footer
+------------------------------------------ */
+footer {
+  background-color: var(--brown);
+  border-top: 2px solid var(--tan);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  color:white !important;
+}
+footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+footer p {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
   
-  /* Base Styling */
-  body {
-    font-family: 'Nunito', sans-serif;
-    color: #4a4a4a;
-    background-color: var(--cream);
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Bootstrap Overrides / Utility Classes */
-  .bg-brown {
-    background-color: var(--brown) !important;
-  }
-  .text-brown {
-    color: var(--brown) !important;
-  }
-  .bg-cream {
-    background-color: var(--cream) !important;
-  }
-  .btn-tan {
-    background-color: var(--tan) !important;
-    border: none !important;
-    color: #ffffff !important;
-  }
-  .btn-tan:hover {
-    background-color: var(--brownish) !important;
-  }
-  .btn-brown {
-    background-color: var(--brown) !important;
-    border: none !important;
-    color: #ffffff !important;
-  }
-  .btn-brown:hover {
-    background-color: var(--brownish) !important;
-  }
-  
-  /* Navbar (Shared) */
-  .navbar-dark.bg-brown {
-    background-color: var(--brown) !important;
-  }
-  .navbar-brand {
-    font-family: 'Montserrat', sans-serif;
-  }
-  .navbar-dark .navbar-nav .nav-link.active {
-    color: var(--tan) !important;
-  }
-  
-  /* Section Headings (Global) */
+  font-size: 0.95rem;
+}
+
+/* Example: If you want columns in the footer, you could do:
+.footer-content {
+  flex-direction: row;
+  justify-content: space-between;
+} 
+.footer-content div { width: 25%; }
+But we keep it center-based for now.
+*/
+
+/* -----------------------------------------
+   6. Responsive Adjustments (Global)
+------------------------------------------ */
+@media (max-width: 768px) {
   .section-heading {
-    font-family: 'Playfair Display', serif;
-    color: var(--brown);
-    font-weight: 700;
+    font-size: 1.75rem;
   }
-  
-  /* Footer */
-  footer p {
-    margin: 0;
-    color: var(--brown);
-    font-family: 'Montserrat', sans-serif;
+  footer .footer-content {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  /* Responsive Adjustments (Global) */
-  @media (max-width: 768px) {
-    .section-heading {
-      font-size: 1.75rem;
-    }
-  }
-  
+}

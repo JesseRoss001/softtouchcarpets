@@ -12,8 +12,9 @@
     crossorigin="anonymous"
   >
 
-  <!-- Custom Home Page CSS -->
+  <!-- Global Styles -->
   <link rel="stylesheet" href="styles.css" />
+  <!-- Homepage-Specific Styles -->
   <link rel="stylesheet" href="index.css" />
 
   <!-- SEO Meta Tags -->
@@ -56,8 +57,9 @@
   </script>
 </head>
 <body>
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-brown shadow-sm py-3">
+
+  <!-- NAVBAR (Sticky) -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-brown sticky-top shadow-sm py-3">
     <div class="container">
       <a class="navbar-brand fw-bold" href="#">
         Soft Touch Carpets &amp; Elegant Edges
@@ -76,10 +78,18 @@
 
       <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
         <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -110,7 +120,7 @@
           >
         </div>
         <div class="col-lg-6">
-          <h2 class="section-heading mb-4" style="font-family: 'Playfair Display', serif;">Why Choose Us?</h2>
+          <h2 class="section-heading mb-4">Why Choose Us?</h2>
           <p class="fs-5 mb-4">
             At Soft Touch Carpets &amp; Elegant Edges, we bring four decades of experience, 
             NVQ-qualified fitters, and a passion for design to every project. Our family-run 
@@ -155,7 +165,7 @@
             <p class="mt-2">
               From underlay to finish, we provide seamless installations that enhance comfort and style.
             </p>
-            <a href="services.html" class="btn btn-link text-decoration-none">Learn More &rarr;</a>
+            <a href="services.html" class="btn btn-tan text-decoration-none">Learn More &rarr;</a>
           </div>
         </div>
         <div class="col-md-6 col-lg-4">
@@ -169,7 +179,7 @@
             <p class="mt-2">
               Transform your staircase into a luxurious focal point, with custom edging &amp; rods.
             </p>
-            <a href="services.html" class="btn btn-link text-decoration-none">Learn More &rarr;</a>
+            <a href="services.html" class="btn btn-tan text-decoration-none">Learn More &rarr;</a>
           </div>
         </div>
         <div class="col-md-6 col-lg-4">
@@ -183,7 +193,7 @@
             <p class="mt-2">
               Sleek, water-resistant, and easy to maintain—ideal for busy kitchens &amp; bathrooms.
             </p>
-            <a href="services.html" class="btn btn-link text-decoration-none">Learn More &rarr;</a>
+            <a href="services.html" class="btn btn-tan text-decoration-none">Learn More &rarr;</a>
           </div>
         </div>
       </div>
@@ -243,9 +253,9 @@
   <!-- SERVICE AREAS SECTION -->
   <section class="py-5 bg-light">
     <div class="container">
-      <div class="row align-items-center g-5">
+      <div class="row align-items-center justify-content-center g-5">
         <div class="col-lg-6">
-          <h2 class="section-heading mb-4" style="font-family: 'Playfair Display', serif;">
+          <h2 class="section-heading mb-4">
             We’re Local. We’re Flexible.
           </h2>
           <p class="fs-5 mb-4">
@@ -256,11 +266,12 @@
           </p>
           <a href="contact.html" class="btn btn-brown">Check Our Availability</a>
         </div>
-        <div class="col-lg-6">
+        <div class="d-none d-lg-flex col-lg-6">
           <img 
             src="hertfordshire.jpg"
             alt="Coverage map" 
             class="img-fluid rounded shadow"
+            style="max-height: 400px;"
           >
         </div>
       </div>
@@ -270,7 +281,7 @@
   <!-- FINAL CTA SECTION -->
   <section class="py-5 text-center bg-cream">
     <div class="container">
-      <h2 class="section-heading mb-3" style="font-family: 'Playfair Display', serif;">
+      <h2 class="section-heading mb-3">
         Experience the Soft Touch Difference
       </h2>
       <p class="fs-5 mb-4">
@@ -282,10 +293,10 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="border-top py-4 bg-light">
-    <div class="container text-center">
-      <p class="mb-1">&copy; 2025 Soft Touch Carpets &amp; Elegant Edges</p>
-      <p class="mb-0">Proudly serving Hertfordshire &amp; Surrounding Areas</p>
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2025 Soft Touch Carpets &amp; Elegant Edges</p>
+      <p>Proudly serving Hertfordshire &amp; Surrounding Areas</p>
     </div>
   </footer>
 
