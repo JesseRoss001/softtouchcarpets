@@ -1,142 +1,167 @@
-/* 
+/*
   SERVICES.CSS
-  Custom styling for the Services page of 
-  Soft Touch Carpets & Elegant Edges, 
-  including parallax, brand colours, 
-  and improved layout components.
+  Enhanced styling for the Services page of
+  Soft Touch Carpets & Elegant Edges:
+  - Parallax hero
+  - Wave dividers for distinct sections
+  - Alternating backgrounds & refined image handling
 */
 
-/* Base Colours & Fonts */
+/* Colour Variables & Typography */
 :root {
-    --brown: #3B2F2F;
-    --brownish: #8B7D7B;
-    --tan: #C2A878;
-    --cream: #FFFDF9;
-    --light-cream: #FFF8E1;
-  }
-  
-  /* Global Typography */
-  body {
-    font-family: 'Nunito', sans-serif;
-    color: #4a4a4a;
-    background-color: var(--cream);
-  }
-  
-  /* Utility Classes */
-  .bg-brown {
-    background-color: var(--brown) !important;
-  }
-  .text-brown {
-    color: var(--brown) !important;
-  }
-  .bg-cream {
-    background-color: var(--cream) !important;
-  }
-  .btn-tan {
-    background-color: var(--tan) !important;
-    border: none !important;
-    color: #ffffff !important;
-  }
-  .btn-tan:hover {
-    background-color: var(--brownish) !important;
-  }
-  .btn-brown {
-    background-color: var(--brown) !important;
-    border: none !important;
-    color: #ffffff !important;
-  }
-  .btn-brown:hover {
-    background-color: var(--brownish) !important;
-  }
-  
-  /* Navbar */
-  .navbar-dark.bg-brown {
-    background-color: var(--brown) !important;
-  }
-  .navbar-dark .navbar-nav .nav-link.active {
-    color: var(--tan) !important;
-  }
-  
-  /* Hero Section (Parallax) */
+  --brown: #3B2F2F;
+  --brownish: #8B7D7B;
+  --tan: #C2A878;
+  --cream: #FFFDF9;
+  --light-cream: #FFF8E1;
+}
+
+/* Base Body Styling */
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #4a4a4a;
+  background-color: var(--cream);
+  margin: 0;
+  padding: 0;
+}
+
+/* Utility Classes */
+.bg-brown {
+  background-color: var(--brown) !important;
+}
+.text-brown {
+  color: var(--brown) !important;
+}
+.bg-cream {
+  background-color: var(--cream) !important;
+}
+.btn-tan {
+  background-color: var(--tan) !important;
+  border: none !important;
+  color: #fff !important;
+  transition: background-color 0.3s ease;
+}
+.btn-tan:hover {
+  background-color: var(--brownish) !important;
+}
+.btn-brown {
+  background-color: var(--brown) !important;
+  border: none !important;
+  color: #fff !important;
+  transition: background-color 0.3s ease;
+}
+.btn-brown:hover {
+  background-color: var(--brownish) !important;
+}
+
+/* Hero Section (Parallax) */
+.hero-section {
+  position: relative;
+  background: url("services-hero.jpg") center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed; /* Parallax effect on modern desktop browsers */
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-overlay {
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  background-color: rgba(59, 47, 47, 0.5);
+  z-index: 0;
+}
+.hero-section .container {
+  z-index: 2;
+}
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  color: #fff;
+}
+
+/* Wave Divider (Top & Bottom) */
+.wave-divider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.wave-divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 50px;
+}
+.wave-divider.wave-top {
+  margin-top: -1px; /* remove small gap */
+}
+.wave-divider.wave-bottom {
+  margin-bottom: -1px;
+}
+
+/* Section Headings */
+.section-heading {
+  font-family: 'Playfair Display', serif;
+  color: var(--brown);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+/* Service Sections */
+.row.align-items-center img {
+  transition: transform 0.3s ease;
+}
+.row.align-items-center img:hover {
+  transform: scale(1.02);
+}
+
+/* Portfolio/Gallery */
+img.img-fluid.rounded.shadow {
+  transition: transform 0.2s ease;
+}
+img.img-fluid.rounded.shadow:hover {
+  transform: scale(1.02);
+}
+
+/* Testimonials Carousel */
+.carousel .carousel-item {
+  padding: 2rem 1rem;
+}
+.testimonial {
+  transition: transform 0.2s ease;
+}
+.testimonial:hover {
+  transform: translateY(-5px);
+}
+
+/* FAQ Accordion */
+.accordion-button:focus {
+  box-shadow: none;
+}
+.accordion-button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+.accordion-button.collapsed {
+  color: #4a4a4a;
+  background-color: #fff;
+}
+.accordion-button:not(.collapsed) {
+  color: #fff;
+  background-color: var(--brown);
+}
+
+/* Responsive: Disable Parallax on Smaller Devices */
+@media (max-width: 992px) {
   .hero-section {
-    position: relative;
-    background: url("services-hero.jpg") center center no-repeat;
-    background-size: cover;
-    background-attachment: fixed; /* Parallax effect on modern desktop browsers */
-    min-height: 70vh;
-    display: flex;
+    background-attachment: scroll;
   }
-  .hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(59, 47, 47, 0.5);
-    z-index: 0;
-  }
+}
+@media (max-width: 576px) {
   .hero-title {
-    font-family: 'Playfair Display', serif;
-    color: #fff;
-    z-index: 2;
+    font-size: 1.8rem;
   }
-  .hero-section .container {
-    z-index: 2; /* Ensures text is above overlay */
-  }
-  
-  /* Section Headings */
-  .section-heading {
-    font-family: 'Playfair Display', serif;
-    color: var(--brown);
-  }
-  
-  /* Cards or Images Variation */
-  img.rounded.shadow {
-    transition: transform 0.3s ease;
-  }
-  img.rounded.shadow:hover {
-    transform: scale(1.02);
-  }
-  
-  /* Carousel */
-  .carousel .carousel-item {
-    padding: 2rem 1rem;
-  }
-  
-  /* Accordion */
-  .accordion-button:focus {
-    box-shadow: none;
-  }
-  .accordion-button {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-  }
-  .accordion-button.collapsed {
-    color: #4a4a4a;
-    background-color: #fff;
-  }
-  .accordion-button:not(.collapsed) {
-    color: #fff;
-    background-color: var(--brown);
-  }
-  
-  /* Footer */
-  footer p {
-    margin: 0;
-    color: var(--brown);
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  /* Media Queries */
-  @media (max-width: 992px) {
-    /* Disable parallax on smaller screens for performance and usability */
-    .hero-section {
-      background-attachment: scroll;
-    }
-  }
-  @media (max-width: 576px) {
-    .hero-title {
-      font-size: 1.8rem;
-    }
-  }
-  
+}
