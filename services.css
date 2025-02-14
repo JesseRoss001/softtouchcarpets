@@ -60,7 +60,7 @@
   /* Hero Section (Parallax) */
   .hero-section {
     position: relative;
-    background: url("https://via.placeholder.com/1920x1080?text=Hero+Carpet+Image") center center no-repeat;
+    background: url("services-hero.jpg") center center no-repeat;
     background-size: cover;
     background-attachment: fixed; /* Parallax effect on modern desktop browsers */
     min-height: 70vh;

@@ -4,7 +4,7 @@
 
 /* Hero Section */
 .about-hero {
-    background: url("https://via.placeholder.com/1920x800?text=About+Hero") center center no-repeat;
+    background: url("about-hero.jpg") center center no-repeat;
     background-size: cover;
     background-attachment: fixed; /* Parallax effect on desktop */
     min-height: 60vh;

@@ -66,7 +66,7 @@
   ----------------------------------------------------- */
   .hero-section {
     min-height: 80vh;
-    background: url("https://via.placeholder.com/1920x1080.png?text=Hero+Carpet+Image") center center no-repeat;
+    background: url("hero.jpg") center center no-repeat;
     background-size: cover;
     background-attachment: fixed; /* Parallax effect on desktop */
     position: relative;
@@ -122,7 +122,7 @@
   
   /* Parallax CTA Section */
   .parallax-cta {
-    background: url("https://via.placeholder.com/1920x800.png?text=Parallax+Flooring") center center no-repeat;
+    background: url("completed-project-1.jpg") center center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     position: relative;

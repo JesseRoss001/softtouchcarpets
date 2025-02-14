@@ -55,7 +55,7 @@
   
   /* Hero Section */
   .contact-hero {
-    background: url("https://via.placeholder.com/1920x800.png?text=Contact+Hero") center center no-repeat;
+    background: url("contact-hero.jpg") center center no-repeat;
     background-size: cover;
     background-attachment: fixed; /* Parallax on desktop */
     min-height: 60vh;
@@ -94,7 +94,7 @@
   
   /* Parallax CTA Section */
   .parallax-cta {
-    background: url("https://via.placeholder.com/1920x600.png?text=CTA+Background") center center no-repeat;
+    background: url("expansion-projects.jpg") center center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     min-height: 40vh;
