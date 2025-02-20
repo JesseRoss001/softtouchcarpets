@@ -67,7 +67,7 @@ img {
 }
 
 .navbar-dark .navbar-nav .nav-link.active {
-  color: var(--tan) !important;
+  color: white !important;
   font-weight: 700;
 }
 
