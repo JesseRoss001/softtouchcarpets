@@ -78,3 +78,5 @@
   transform: translateY(-2px);
   transition: transform 0.2s ease;
 }
+.footer-link { color:#fff; text-decoration:none; }
+.footer-link:hover { text-decoration:underline; }

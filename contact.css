@@ -127,3 +127,5 @@ body {
     font-size: 1.75rem;
   }
 }
+.footer-link { color:#fff; text-decoration:none; }
+.footer-link:hover { text-decoration:underline; }

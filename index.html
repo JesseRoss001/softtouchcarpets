@@ -4,6 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Title & Meta -->
+  <title>Carpet Fitters Luton & St Albans | Free Home Measure & Expert Installation</title>
+  <meta name="description"
+        content="Need professional carpet fitters in Luton and St Albans? Enjoy FREE in-home measuring and expert installation by NVQ-qualified fitters. Serving Luton, St Albans & all Hertfordshire with 38 years of experience." />
+  <link rel="canonical" href="https://softtouchcarpets.uk/" />
+  <meta name="keywords"
+        content="carpet fitters Luton, carpet fitting, vinyl flooring, stair runner installation, home carpet installation" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Carpet Fitters Luton | Free Home Measure & Expert Installation" />
+  <meta property="og:description"
+        content="FREE home measuring & flawless installation by NVQ-qualified carpet fitters in Luton, St Albans & Hertfordshire." />
+  <meta property="og:url" content="https://softtouchcarpets.uk/" />
+  <meta property="og:image" content="https://softtouchcarpets.uk/img/og-hero.jpg" />
+  <meta property="og:locale" content="en_GB" />
+  <meta name="twitter:card" content="summary_large_image" />
+
   <!-- Bootstrap CSS -->
   <link 
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
@@ -12,21 +30,19 @@
     crossorigin="anonymous"
   >
 
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.min.css"
+/>
+
   <!-- Global Styles -->
   <link rel="stylesheet" href="styles.css" />
   <!-- Homepage-Specific Styles -->
   <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="cookie.css" />
 
-  <!-- SEO Meta Tags -->
-  <title>Soft Touch Carpets | Expert Carpet Fitting & Home Carpet Installation in Luton & St Albans</title>
-  <meta 
-    name="description" 
-    content="Transform your home with expert carpet fitting and installation services. Specialising in stair runner solutions, carpet and flooring, and home carpet upgrades in Luton, St Albans & beyond — backed by 38 years of expertise." 
-    />
-  <meta 
-    name="keywords" 
-    content="carpet fitting, stair runner, carpet and flooring, home carpet, carpet installation, Luton carpet fitting, St Albans carpet fitting" 
-    />
+
+
 
   <!-- Google Fonts (Playfair Display, Montserrat, Nunito) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,30 +52,68 @@
     rel="stylesheet"
   >
   <link rel="icon" type="image/png" href="STCEE.png">
-  <!-- Optional Schema Markup (LocalBusiness) -->
+  <!-- LocalBusiness Schema (unchanged) -->
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Soft Touch Carpets & Elegant Edges",
-      "description": "Expert carpet fitting, stair runner installation, carpet and flooring solutions, and custom mat services in Hertfordshire, proudly serving Luton, St Albans and surrounding areas with 38 years of excellence.",
-      "telephone": "+44 7768 106205",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "2 Warren Close",
-        "addressLocality": "Hatfield",
-        "addressRegion": "Herts",
-        "postalCode": "AL10 0AL",
-        "addressCountry": "GB"
-      },
-      "url": "https://softtouchcarpets.uk/"
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Soft Touch Carpets & Elegant Edges",
+    "url": "https://softtouchcarpets.uk",
+    "telephone": "+44 7768 106205",
+    "image": "https://softtouchcarpets.uk/img/og-hero.jpg",
+    "description": "NVQ-qualified carpet fitters offering free home measuring and expert installation across Luton, St Albans & Hertfordshire.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2 Warren Close",
+      "addressLocality": "Hatfield",
+      "addressRegion": "Hertfordshire",
+      "postalCode": "AL10 0AL",
+      "addressCountry": "GB"
+    },
+    "areaServed": ["Luton","St Albans","Dunstable","Harpenden","Welwyn Garden City"],
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    }],
+    "serviceType": ["Carpet fitting","Vinyl flooring installation","Stair runner installation"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Services",
+      "itemListElement": [{
+        "@type": "Offer",
+        "name": "Free Home Measure",
+        "price": "0.00",
+        "priceCurrency": "GBP"
+      },{
+        "@type": "Offer",
+        "name": "Expert Installation",
+        "priceCurrency": "GBP"
+      }]
     }
-    </script>
+  }
+  </script>
+    
     
     
     
 </head>
 <body>
+<!-- COOKIE BANNER -->
+<div id="cookie-banner" role="dialog" aria-live="polite" class="cookie-banner">
+  <div class="cookie-content">
+    <p>
+      🍪 We use cookies to improve your browsing experience, deliver personalised content, and analyse our traffic. 
+      By clicking “Accept All”, you consent to our use of cookies. See our 
+      <a href="cookie-policy.html">Cookie Policy</a> for details.
+    </p>
+    <div class="cookie-buttons">
+      <button id="cookie-accept" class="btn-accept">Accept All 🍪</button>
+      <button id="cookie-decline" class="btn-decline">Decline</button>
+    </div>
+  </div>
+</div>
 
   <!-- NAVBAR (Sticky) -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-brown sticky-top shadow-sm ">
@@ -105,11 +159,11 @@
   <header class="hero-section position-relative d-flex align-items-center">
     <div class="hero-overlay"></div>
     <div class="container text-white text-center z-index-2">
-      <h1 class="display-3 fw-bold hero-title mb-4">Carpet Fitting & Home Installation in Luton</h1>
-      <p class="lead hero-subtitle mb-5">
-        Affordable home carpet fitting and installation services, professional stair runner solutions, 
-        and bespoke mat services for Luton, St Albans and Hertfordshire — backed by 38 years of excellence.
-      </p>      
+      <h1 class="display-3 fw-bold hero-title mb-4">Luton’s NVQ-Qualified Carpet Fitters</h1>
+      <p class="lead mb-5">
+  From plush <strong>stairs carpet</strong> to hard-wearing <strong>vinyl flooring</strong>, we cover Luton,
+  St Albans and the whole of Hertfordshire.
+</p>      
       <a href="services.html" class="btn btn-tan btn-lg">
         Explore Our Services
       </a>
@@ -129,18 +183,18 @@
           >
         </div>
         <div class="col-lg-6">
-          <h2 class="section-heading mb-4">Choosing the Right Carpet Fitters in Luton and St. Albans</h2>
+          <h2 class="section-heading mb-4">Your First-Choice Carpet & Flooring Specialists Near Luton</h2>
           <p class="fs-5 mb-4">
-            At Soft Touch Carpets &amp; Elegant Edges, our 38 years of experience in carpet fitting 
-            and installation mean you receive quality home carpet solutions every time. Our NVQ-qualified fitters 
-            and personal, family-run approach guarantee precision and care on every project.
+            Soft Touch Carpets has supplied and fitted carpet and vinyl flooring near Luton
+  for almost four decades. Our family-run team holds full NVQ Level 2/3
+  qualifications, so you get precision workmanship and friendly service every time.
           </p>          
           <ul class="list-unstyled">
-            <li class="mb-2"><strong>With 38 years experience</strong> in the flooring industry</li>
-            <li class="mb-2">Wide range of <strong>carpets to suit every budget</strong></li>
-            <li class="mb-2">Free <strong>measuring</strong> &amp; estimating services</li>
-            <li class="mb-2">Expert <strong>stair runner</strong> installation &amp; custom mat whipping</li>
-            <li class="mb-2">Serving <strong>Hertfordshire</strong> &amp; a 20–40 mile radius</li>
+              <li class="mb-2"><strong>38 years’ industry know-how</strong> – domestic & commercial</li>
+  <li class="mb-2"><strong>Wide choice of carpets & floor tiles</strong> to suit every budget</li>
+  <li class="mb-2">FREE <strong>measuring and estimates</strong> – we visit at a time that suits you</li>
+  <li class="mb-2">Expert <strong>stair carpet & stair-runner installation</strong></li>
+  <li class="mb-2">Covering <strong>Luton, St Albans, Dunstable, Harpenden, WGC, and surrounding area</strong></li>
           </ul>
           <a href="about.html" class="btn btn-brown mt-3">Learn More About Us</a>
         </div>
@@ -240,13 +294,13 @@
       <div class="row align-items-center justify-content-center g-5">
         <div class="col-lg-6">
           <h2 class="section-heading mb-4">
-            We’re Local. We’re Flexible.
+            Local Carpet Fitters – Covering Luton & Surrounding Towns
           </h2>
           <!-- Changed "Based in Hatfield" to "Based in St Albans" & swapped "includes St Albans" to "includes Hatfield" -->
           <p class="fs-5 mb-4">
-            Based in <strong>St Albans</strong> and proudly serving <strong>Luton</strong> along with 
-            all of Hertfordshire within a 20–40 mile radius. This includes Welwyn Garden City, Cheshunt, Hatfield, 
-            Harpenden, and more. For larger projects, we’re happy to discuss extended travel – your dream floors await!
+            Based in St Albans, we provide fast, reliable flooring services
+  across Luton, Dunstable, Harpenden, Welwyn Garden City, Hatfield and every
+  village in-between. Searching for carpet fitters nearby?  We’re probably already on your street.
           </p>
           
           <a href="contact.html" class="btn btn-brown">Check Our Availability</a>
@@ -314,17 +368,67 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="container footer-content">
-      <p>&copy; 2025 Soft Touch Carpets &amp; Elegant Edges</p>
-      <p>Proudly serving Hertfordshire &amp; Surrounding Areas</p>
-      <p>
-        Call: 07768 106205 | Email: 
-        <a href="mailto:softtouchcarpets100@gmail.com" style="color:white;">softtouchcarpets100@gmail.com</a>
-      </p>
+<!-- FOOTER -->
+<footer class="border-top py-5 bg-brown text-white">
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- Brand / Blurb -->
+      <div class="col-md-4 text-start">
+        <a href="index.html" class="d-inline-flex align-items-left mb-2 text-decoration-none text-white">
+          <img src="STCEE.png" alt="" width="36" height="36" class="me-2">
+          <span class="fw-bold">Soft Touch Carpets</span>
+        </a>
+        <p class="small mb-0">
+          NVQ-qualified carpet fitters with 38years’ experience in
+          Luton, St Albans & Hertfordshire.
+          We supply and install carpet, stairs carpet and vinyl flooring with free home measuring.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-6 col-md-2">
+        <h6 class="fw-semibold text-start mb-3">Pages</h6>
+        <ul class="list-unstyled text-start small">
+          <li><a href="index.html"     class="footer-link">Home</a></li>
+          <li><a href="about.html"     class="footer-link">About</a></li>
+          <li><a href="services.html"  class="footer-link">Services</a></li>
+          <li><a href="contact.html"   class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Policies -->
+      <div class="col-6 col-md-3">
+        <h6 class="fw-semibold text-start mb-3">Policies</h6>
+        <ul class="list-unstyled text-start small">
+          <li><a href="cookie-policy.html"  class="footer-link">Cookie&nbsp;Policy</a></li>
+          <li><a href="privacy-policy.html" class="footer-link">Privacy&nbsp;Policy</a></li>
+        </ul>
+      </div>
+
+      <!-- Social -->
+      <div class="col-md-3">
+        <h6 class="fw-semibold text-start mb-3">Follow&nbsp;Us</h6>
+        <div class="d-flex gap-3 fs-4">
+          <a href="https://www.instagram.com/softtouchcarpets/"          class="footer-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100092311272814" class="footer-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://g.co/kgs/qTBwTbf"                              class="footer-link" aria-label="Google Business Profile"><i class="bi bi-google"></i></a>
+        </div>
+      </div>
+
     </div>
-  </footer>
+
+    <hr class="border-light my-4">
+
+    <div class="text-center small">
+      &copy; 2025 Soft Touch Carpets &amp; Elegant Edges &middot;
+      Website Design by
+      <a href="https://cleandesignuk.com/" class="footer-link">Clean&nbsp;Design&nbsp;UK</a>
+    </div>
+  </div>
+</footer>
+
+
 
   <!-- Bootstrap JS Bundle -->
   <script 
@@ -332,5 +436,8 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
     crossorigin="anonymous"
   ></script>
+
+  <script src="cookie.js"></script>
+
 </body>
 </html>

@@ -155,3 +155,8 @@ body {
     font-size: 1rem;
   }
 }
+.footer-link { color:#fff; text-decoration:none; }
+.footer-link:hover { text-decoration:underline; }
+@media (max-width: 576px) {
+  .row { --bs-gutter-x: 1rem; }     /* 1 rem gutter = 0.5 rem negative margin */
+}
